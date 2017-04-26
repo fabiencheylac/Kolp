@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar align-title="center">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+<ion-title> Nom playlist ou Kolp </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-tabs>
+
+  <ion-tab [root]="tab1Root" tabTitle="Playlist" tabIcon="list"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Dernier ajout" tabIcon="clock"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Ajouter" tabIcon="search"></ion-tab>
+
+
+</ion-tabs>
