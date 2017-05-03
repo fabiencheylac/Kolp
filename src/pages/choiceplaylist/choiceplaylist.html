@@ -23,7 +23,7 @@
 <h2>Precedente playlist</h2>
 
 <ion-list no-lines >
-  <button ion-item  text-wrap  *ngFor="let oplaylist of Oldplaylist" (click)="afficherspot(oplaylist.id)">
+  <button ion-item  text-wrap  *ngFor="let oplaylist of Oldplaylist" (click)="selectplaylist(oplaylist.id)">
     {{ oplaylist.name }}
     {{ oplaylist.comment }}
     {{ oplaylist.genre }}
@@ -32,7 +32,7 @@
 
 <h2>dernière playlist rejointe</h2>
 <ion-list no-lines>
-    <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="afficherspot(lplaylist.id)">
+    <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="selectplaylist(lplaylist.id)">
       {{ lplaylist.name }}
       {{ lplaylist.comment }}
       {{ lplaylist.genre }}

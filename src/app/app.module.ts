@@ -51,6 +51,7 @@ import { ApiOldPlaylist } from '../providers/api-old-playlist';
     MyApp,
     HomePage,
     AboutPage,
+    PlaylistPage,
     ChoicePlaylistPage,
     LastAddPage,
     NewPlaylistPage,

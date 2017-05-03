@@ -6,6 +6,8 @@ import { ApiOldPlaylist } from '../../providers/api-old-playlist';
 import { ApiLastPlaylist } from '../../providers/api-last-playlist';
 import { Lastplaylist } from '../../models/lastplaylist';
 import { Oldplaylist } from '../../models/oldplaylist';
+
+import { TabPlaylist } from "../tabplaylist/tabplaylist";
 /**
  * Generated class for the Choiceplaylist page.
  *
@@ -39,6 +41,9 @@ Lastplaylist: Lastplaylist[];
 
   newplaylist() {
     this.navCtrl.push(NewPlaylistPage);
+  }
+  selectplaylist(){
+    this.navCtrl.push(TabPlaylist);
   }
 
 }

@@ -2,6 +2,7 @@
 import { NavController, NavParams } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { TabPlaylist } from '../tabplaylist/tabplaylist'
+import {PlaylistPage} from "../playlist/playlist";
 declare var google;
 
 /**
@@ -34,9 +35,11 @@ export class SearchPlaylistPage {
   }
 
 
-  connectToPlaylist() {
+
+  selectPlaylist(){
     this.navCtrl.push(TabPlaylist);
   }
+
 
 
 }
