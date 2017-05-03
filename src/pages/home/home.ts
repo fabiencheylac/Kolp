@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, PopoverController } from 'ionic-angular';
+import { ChoicePlaylistPage } from '../choiceplaylist/choiceplaylist';
+import { SearchPlaylistPage } from '../searchplaylist/searchplaylist';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +9,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public pops: PopoverController ) {
 
   }
 
+  choiceplaylist() {
+    this.navCtrl.push(ChoicePlaylistPage);
+  }
+  searchplaylist() {
+    this.navCtrl.push(SearchPlaylistPage);
+  }
 }

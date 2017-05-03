@@ -19,13 +19,14 @@ import { TabPlaylist } from '../pages/tabplaylist/tabplaylist';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
-  
+
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
       this.initializeApp();
 
@@ -36,12 +37,10 @@ export class MyApp {
         { title: 'new playlist', component: NewPlaylistPage },
         { title: 'playlist', component: PlaylistPage },
         { title: 'Recherche youtube', component: SearchYoutubePage },
-        { title: 'List', component: SearchPlaylistPage },
-        { title: 'List', component: LastAddPage },
-        { title: 'playlist', component: TabPlaylist },
-        { title: 'List', component:  AboutPage},
-        { title: 'List', component: SearchPlaylistPage },
-        { title: 'List', component: LastAddPage },
+        { title: 'Recherche playlist a proximité', component: SearchPlaylistPage },
+        { title: 'dernier ajout', component: LastAddPage },
+        { title: 'playlisttab', component: TabPlaylist },
+        { title: 'A propos', component:  AboutPage},
       ];
 
     }

@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { Geolocation } from '@ionic-native/geolocation';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -15,6 +16,8 @@ import { SearchPlaylistPage } from '../pages/searchplaylist/searchplaylist';
 import { SearchYoutubePage } from '../pages/searchyoutube/searchyoutube';
 import { TabPlaylist } from '../pages/tabplaylist/tabplaylist';
 
+import { ApiLastPlaylist } from '../providers/api-last-playlist';
+import { ApiOldPlaylist } from '../providers/api-old-playlist';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { TabPlaylist } from '../pages/tabplaylist/tabplaylist';
     TabPlaylist
   ],
   providers: [
+    ApiOldPlaylist,
+    ApiLastPlaylist,
+    Geolocation,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

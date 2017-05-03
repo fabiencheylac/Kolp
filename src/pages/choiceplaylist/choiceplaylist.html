@@ -10,24 +10,32 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Connecté vous a une playlist</ion-title>
+    <ion-title>Choisissez une Playlist</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-<div>
-  <p>
-    google.map
-  </p>
-</div>
+  <h2>Precedente playlist</h2>
+<button ion-button (click)="newplaylist()">Nouvelle playlist</button>
 
-<h2>Les playlists à proximité</h2>
-<ion-list>
-<ion-item>playlist1</ion-item>
-<ion-item>playlist1</ion-item>
-<ion-item>playlist1</ion-item>
-<ion-item>playlist1</ion-item>
+<h2>Precedente playlist</h2>
+<ion-list >
+  <button ion-item  text-wrap  *ngFor="let oplaylist of Oldplaylist" (click)="afficherspot(oplaylist.id)">
+    {{ oplaylist.name }}
+    {{ oplaylist.comment }}
+    {{ oplaylist.genre }}
+  </button>
 </ion-list>
+<h2>dernière playlist rejointe</h2>
+<ion-list>
+    <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="afficherspot(lplaylist.id)">
+      {{ lplaylist.name }}
+      {{ lplaylist.comment }}
+      {{ lplaylist.genre }}
+      {{ lplaylist.date }}
+    </button>
+  </ion-list>
+
 </ion-content>

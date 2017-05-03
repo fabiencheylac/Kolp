@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+
 import { NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+declare var google;
 
 /**
  * Generated class for the Searchplaylist page.
@@ -13,12 +15,25 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'searchplaylist.html',
 })
 export class SearchPlaylistPage {
+  /*
+  @ViewChild('map') mapElement: ElementRef;
+  map: any;
 
+  ionViewDidLoad(){
+ let mapOptions = {
+ center: new google.maps.LatLng(this.latitude,this.longitude),
+ zoom: 15,
+ mapTypeId: google.maps.MapTypeId.ROADMAP
+ }
+ this.map = new google.maps.Map(
+ this.mapElement.nativeElement, mapOptions);
+ }
+ */
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Searchplaylist');
-  }
+
+
+
 
 }
