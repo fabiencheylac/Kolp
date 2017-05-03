@@ -17,19 +17,21 @@
 
 
 <ion-content padding>
-  <h2>Precedente playlist</h2>
+
 <button ion-button (click)="newplaylist()">Nouvelle playlist</button>
 
 <h2>Precedente playlist</h2>
-<ion-list >
+
+<ion-list no-lines >
   <button ion-item  text-wrap  *ngFor="let oplaylist of Oldplaylist" (click)="afficherspot(oplaylist.id)">
     {{ oplaylist.name }}
     {{ oplaylist.comment }}
     {{ oplaylist.genre }}
   </button>
 </ion-list>
+
 <h2>dernière playlist rejointe</h2>
-<ion-list>
+<ion-list no-lines>
     <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="afficherspot(lplaylist.id)">
       {{ lplaylist.name }}
       {{ lplaylist.comment }}
@@ -37,5 +39,4 @@
       {{ lplaylist.date }}
     </button>
   </ion-list>
-
 </ion-content>

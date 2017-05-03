@@ -10,12 +10,23 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>searchplaylist</ion-title>
+    <ion-title>Searchplaylist</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <div #map id="carte"></div> 
+  <div #map id="carte">
+ici y'aura la map
+  </div>
+
+  <div>
+    Ici la list des playlist a proximité
+    <ion-list >
+      <button ion-item (click)="connectToPlaylist()">playlist 1</button>
+        <button ion-item (click)="connectToPlaylist()">playlist 2</button>
+          <button ion-item (click)="connectToPlaylist()">playlist 3</button>
+    </ion-list>
+  </div>
 </ion-content>

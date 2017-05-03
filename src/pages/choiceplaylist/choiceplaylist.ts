@@ -18,19 +18,20 @@ import { Oldplaylist } from '../../models/oldplaylist';
   templateUrl: 'choiceplaylist.html',
   providers: [ ApiOldPlaylist, ApiLastPlaylist ]
 })
+
 export class ChoicePlaylistPage {
-oldplaylist: Oldplaylist[];
-lastplaylist: Lastplaylist[];
+Oldplaylist: Oldplaylist[];
+Lastplaylist: Lastplaylist[];
   constructor(public navCtrl: NavController, public navParams: NavParams, public apilastplaylist: ApiLastPlaylist, public apioldplaylist: ApiOldPlaylist) {
-    this.apilastplaylist.load().subscribe(lastplaylist => {
-      this.lastplaylist = lastplaylist;
+    this.apilastplaylist.load().subscribe(Lastplaylist => {
+      this.Lastplaylist = Lastplaylist;
 
     })
-    this.apioldplaylist.load().subscribe(oldplaylist => {
-      this.oldplaylist = oldplaylist;
-
+    this.apioldplaylist.load().subscribe(Oldplaylist => {
+      this.Oldplaylist = Oldplaylist;
     })
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Choiceplaylist');

@@ -16,8 +16,6 @@ export class PlaylistPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Playlist');
-  }
+
 
 }

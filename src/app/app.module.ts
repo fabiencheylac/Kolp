@@ -3,18 +3,24 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-import { Geolocation } from '@ionic-native/geolocation';
+import { HttpModule } from '@angular/http';
+
+//import { Geolocation } from '@ionic-native/geolocation';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 
 import { ChoicePlaylistPage } from '../pages/choiceplaylist/choiceplaylist';
-import { LastAddPage } from '../pages/lastadd/lastadd';
 import { NewPlaylistPage } from '../pages/newplaylist/newplaylist';
+
+
 import { SearchPlaylistPage } from '../pages/searchplaylist/searchplaylist';
-import { SearchYoutubePage } from '../pages/searchyoutube/searchyoutube';
+
 import { TabPlaylist } from '../pages/tabplaylist/tabplaylist';
+import { LastAddPage } from '../pages/lastadd/lastadd';
+import { PlaylistPage } from '../pages/playlist/playlist';
+import { SearchYoutubePage } from '../pages/searchyoutube/searchyoutube';
 
 import { ApiLastPlaylist } from '../providers/api-last-playlist';
 import { ApiOldPlaylist } from '../providers/api-old-playlist';
@@ -24,6 +30,7 @@ import { ApiOldPlaylist } from '../providers/api-old-playlist';
     MyApp,
     HomePage,
     AboutPage,
+    PlaylistPage,
     ChoicePlaylistPage,
     LastAddPage,
     NewPlaylistPage,
@@ -33,7 +40,11 @@ import { ApiOldPlaylist } from '../providers/api-old-playlist';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpModule,
+    IonicModule.forRoot(MyApp, {
+    tabsPlacement: 'bottom',
+    backButtonIcon: 'ion-arrow-left-c',
+      })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,7 +61,7 @@ import { ApiOldPlaylist } from '../providers/api-old-playlist';
   providers: [
     ApiOldPlaylist,
     ApiLastPlaylist,
-    Geolocation,
+
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
