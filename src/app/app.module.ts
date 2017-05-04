@@ -5,6 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http';
 
+import { youTubeServiceInjectables } from '../pages/youtube/youtube';
+import { SearchResultComponent } from '../pages/youtube/youtube';
+import { SearchBox } from '../pages/youtube/youtube';
 //import { Geolocation } from '@ionic-native/geolocation';
 
 import { MyApp } from './app.component';
@@ -16,7 +19,7 @@ import { NewPlaylistPage } from '../pages/newplaylist/newplaylist';
 
 
 import { SearchPlaylistPage } from '../pages/searchplaylist/searchplaylist';
-
+import { YoutubePage} from '../pages/youtube/youtube';
 import { TabPlaylist } from '../pages/tabplaylist/tabplaylist';
 import { LastAddPage } from '../pages/lastadd/lastadd';
 import { PlaylistPage } from '../pages/playlist/playlist';
@@ -31,12 +34,15 @@ import { ApiOldPlaylist } from '../providers/api-old-playlist';
     HomePage,
     AboutPage,
     PlaylistPage,
+    YoutubePage,
     ChoicePlaylistPage,
     LastAddPage,
     NewPlaylistPage,
     SearchYoutubePage,
     SearchPlaylistPage,
-    TabPlaylist
+    TabPlaylist,
+    SearchResultComponent,
+    SearchBox
   ],
   imports: [
     BrowserModule,
@@ -52,20 +58,27 @@ import { ApiOldPlaylist } from '../providers/api-old-playlist';
     HomePage,
     AboutPage,
     PlaylistPage,
+
     ChoicePlaylistPage,
     LastAddPage,
     NewPlaylistPage,
     SearchYoutubePage,
     SearchPlaylistPage,
-    TabPlaylist
+    TabPlaylist,
+    YoutubePage,
+    SearchResultComponent,
+    SearchBox
   ],
   providers: [
     ApiOldPlaylist,
     ApiLastPlaylist,
-
+    youTubeServiceInjectables,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+  ],
+  exports: [
+   YoutubePage
+ ]
 })
 export class AppModule {}

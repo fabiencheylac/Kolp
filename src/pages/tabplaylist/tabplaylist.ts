@@ -5,6 +5,7 @@ import {  NavController, NavParams } from 'ionic-angular';
 import { LastAddPage } from "../lastadd/lastadd";
 import { SearchYoutubePage } from '../searchyoutube/searchyoutube';
 import { PlaylistPage } from '../playlist/playlist';
+import { YoutubePage } from '../youtube/youtube';
 
 
 /**
@@ -19,7 +20,8 @@ import { PlaylistPage } from '../playlist/playlist';
   templateUrl: 'tabplaylist.html',
 })
 export class TabPlaylist {
-  tab1Root: any = PlaylistPage;
+  //tab1Root: any = PlaylistPage;
+  tab1Root: any = YoutubePage;
   tab2Root: any = LastAddPage;
   tab3Root: any = SearchYoutubePage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {

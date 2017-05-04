@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import {  Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -21,7 +21,7 @@ import { TabPlaylist } from '../pages/tabplaylist/tabplaylist';
 })
 
 export class MyApp {
-  @ViewChild(Nav) nav: Nav;
+//  @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
 
@@ -57,7 +57,7 @@ export class MyApp {
     openPage(page) {
       // Reset the content nav to have just this page
       // we wouldn't want the back button to show in this scenario
-      this.nav.setRoot(page.component);
+      //this.nav.setRoot(page.component);
     }
 
 }
