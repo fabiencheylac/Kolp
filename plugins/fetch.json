@@ -6,7 +6,17 @@
         },
         "is_top_level": true,
         "variables": {
-            "API_KEY": "AIzaSyA7F-tOkO_WSJbgoV9yYLC0ckctI2IlkC8"
+            "API_KEY_FOR_ANDROID": "AIzaSyDOy0F2xsUqDaFfNVwG5gc_T160SOWcJH8",
+            "API_KEY_FOR_IOS": "AIzaSyDOy0F2xsUqDaFfNVwG5gc_T160SOWcJH8"
         }
+    },
+    "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Glitchbone/CordovaYoutubeVideoPlayer.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -17,9 +17,10 @@
 
 
 <ion-content padding>
-  <ion-list>
-  <ion-item>
-  <ion-icon name="heart"></ion-icon>musique 1
-  </ion-item>
-  </ion-list>
+
+    <ion-list >
+    <ion-item no-lines  *ngFor="let music of LastAddMusic ">
+    <ion-icon name="heart" (click)=likesing(music.id)></ion-icon>{{music.name}}
+    </ion-item>
+    </ion-list>
 </ion-content>

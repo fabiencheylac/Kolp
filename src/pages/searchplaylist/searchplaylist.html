@@ -17,13 +17,13 @@
 
 
 <ion-content padding>
-  <div #map id="carte">
-ici y'aura la map
-  </div>
+
+<div #map id="map" style="height:50%;"></div>
+
 
   <div>
-    Ici la list des playlist a proximité
-    <ion-list >
+    <h2>Les playlists à proximité</h2>
+    <ion-list no-lines>
       <button ion-item (click)="selectPlaylist()">playlist 1</button>
         <button ion-item (click)="selectPlaylist()">playlist 2</button>
           <button ion-item (click)="selectPlaylist()">playlist 3</button>

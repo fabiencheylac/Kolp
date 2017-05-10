@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
-
+import {ApiLastAddMusic} from '../../providers/api-last-add-music';
+import {LastAddMusic} from '../../models/lastAddMusic';
+//import { TabPlaylist } from '../tabplaylist/tabplaylist';
 /**
  * Generated class for the Lastadd page.
  *
@@ -10,14 +12,23 @@ import {  NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-lastadd',
   templateUrl: 'lastadd.html',
+  providers: [ApiLastAddMusic],
 })
 export class LastAddPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Lastadd');
+
+LastAddMusic: LastAddMusic[];
+  constructor(public navCtrl: NavController, public navParams: NavParams, public apilastaddmusic: ApiLastAddMusic) {
+    this.apilastaddmusic.load().subscribe(LastAddMusic => {
+      this.LastAddMusic = LastAddMusic;
+
+    })
+
   }
+  likesing(id) {
+    console.log("I like this song");
+  this.navCtrl.push(LastAddPage,id);
+}
 
 }

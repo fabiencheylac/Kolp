@@ -20,8 +20,9 @@ import { TabPlaylist } from '../pages/tabplaylist/tabplaylist';
   templateUrl: 'app.html'
 })
 
+
 export class MyApp {
-//  @ViewChild(Nav) nav: Nav;
+  @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
 

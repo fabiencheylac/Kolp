@@ -24317,3 +24317,7 @@ ion-navbar.toolbar {
   width: 100%;
   height: 60%;
 }
+
+.thumbnail img {
+  width: 20%;
+}

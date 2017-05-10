@@ -12,8 +12,6 @@ import { Oldplaylist } from '../models/oldplaylist';
 */
 @Injectable()
 export class ApiOldPlaylist {
-
-
   UrlOldPlaylist = 'http://www.mocky.io/v2/5909a9f71000008b0947c176';
 
     constructor(public http: Http) { }
