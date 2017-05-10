@@ -24313,6 +24313,12 @@ ion-navbar.toolbar {
   }
 }
 
+div.imgtypeplaylist {
+  width: 100px;
+  padding: 10px;
+  display: inline-block;
+}
+
 #carte {
   width: 100%;
   height: 60%;

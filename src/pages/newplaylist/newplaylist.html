@@ -18,12 +18,15 @@
 
 <ion-content padding>
 <label>Donnez un titre:</label>
-
+<input type="text" />
 
 
 
 
  Choisissez un compo de base pour commencer votre Playlist.
+ <div (click)=choicetype(item.nom) *ngFor="let item of genre" class="imgtypeplaylist">
+   <img [src]=chemin+item+type/>
+ </div>
 
 
 

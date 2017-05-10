@@ -13,12 +13,18 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'newplaylist.html',
 })
 export class NewPlaylistPage {
-
+  genre: Array<string>;
+  chemin: string;
+  type: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.genre=["pop","rock","reggae", "rap", "rnb", "electro", "jazz", "classique", "alternative" ]
+    this.chemin="assets/img/"
+    this.type=".png"
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Newplaylist');
+    console.log(this.genre);
   }
 
 }

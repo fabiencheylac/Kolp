@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ApiPlaylist } from '../../providers/api-playlist';
 import { Playlist } from '../../models/playlist';
-import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+//import { youtubeiframe } from 'youtubeiframe';
 
 
 
@@ -22,17 +22,26 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 })
 export class PlaylistPage {
 Playlist: Playlist[];
-  constructor(public navCtrl: NavController, public navParams: NavParams, public apiplaylist: ApiPlaylist, public YoutubeVideoPlayer:YoutubeVideoPlayer ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public apiplaylist: ApiPlaylist ) {
     this.apiplaylist.load().subscribe(Playlist => {
       this.Playlist = Playlist;
 
     })
 
-  }
-  playVideo(){
-  this.YoutubeVideoPlayer.openVideo('Qt2FWAbXinY');
-}
 
+  }
+  /*
+   YouTubeIframeLoader = require('youtubeiframe');
+
+YouTubeIframeLoader.load(function(YT) {
+    new YT.Player('player1', {
+        height: '390',
+        width: '640',
+        videoId: 'M7lc1UVf-VE'
+    });
+});
+
+*/
   likesing(id) {
     console.log("I like this song");
   this.navCtrl.push(PlaylistPage,id);

@@ -29,8 +29,8 @@ import { ApiLastPlaylist } from '../providers/api-last-playlist';
 import { ApiOldPlaylist } from '../providers/api-old-playlist';
 import { ApiPlaylist } from '../providers/api-playlist';
 import { ApiLastAddMusic } from '../providers/api-last-add-music';
-import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
-
+//import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+//import { Youtube } from '../providers/youtube-service';
 import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
@@ -76,7 +76,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     SearchBox
   ],
   providers: [
-    YoutubeVideoPlayer,
+    //Youtube,
     Geolocation,
     ApiLastAddMusic,
     ApiOldPlaylist,
