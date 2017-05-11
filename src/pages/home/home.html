@@ -4,18 +4,25 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Kolp
+           <img  src="assets/img/kolp.png" id="logotitle" alt="logo_KOLP"/>
     </ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content padding>
-  <div >
-     <button ion-button (click)="choiceplaylist()">Diffusez</button>
-     <img class="logo_kolp_gif" src="assets/img/KOLP.gif" alt="logo_KOLP"/>
+<ion-content ><div id="content">
+
+
+  <div padding class="homeimg"  id="diffuse">
+   <h2> ÊTRE DIFFUSEUR</h2>
+     <img (click)="choiceplaylist()" class="logo_kolp_gif" src="assets/img/KOLP.gif" alt="logo_KOLP"/>
+
   </div>
-  <div >
-    <button ion-button (click)="searchplaylist()">Votez</button>
+  <div padding class="homeimg" id="vote">
+<h2>VOTER SUR UNE PLAYLIST</h2>
+    <img (click)="searchplaylist()" class="logo_kolp_gif" src="assets/img/vote.png" alt="logo_votez"/>
+
+
+  </div>
   </div>
 </ion-content>

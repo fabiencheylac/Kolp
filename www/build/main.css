@@ -24319,6 +24319,30 @@ div.imgtypeplaylist {
   display: inline-block;
 }
 
+page-home div.homeimg > img {
+  height: 220px;
+}
+
+page-home img#logotitle {
+  height: 30px;
+}
+
+page-home div#diffuse {
+  boder-bottom: solid 2px black;
+  margin-bottom: 3px;
+  background-color: #DDDDDD;
+}
+
+page-home div#vote {
+  background-color: #BBBBBB;
+}
+
+page-home div#content {
+  height: 100%;
+  text-align: center;
+  background-color: #BBBBBB;
+}
+
 #carte {
   width: 100%;
   height: 60%;

@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
 
 import { youTubeServiceInjectables } from '../pages/searchyoutube/searchyoutube';
 import { SearchResultComponent } from '../pages/searchyoutube/searchyoutube';
@@ -33,6 +35,10 @@ import { ApiLastAddMusic } from '../providers/api-last-add-music';
 //import { Youtube } from '../providers/youtube-service';
 import { Geolocation } from '@ionic-native/geolocation';
 
+
+import { YoutubePlayerModule } from 'ng2-youtube-player';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -51,6 +57,7 @@ import { Geolocation } from '@ionic-native/geolocation';
   ],
   imports: [
     BrowserModule,
+    YoutubePlayerModule,
     HttpModule,
     IonicModule.forRoot(MyApp, {
     tabsPlacement: 'bottom',
@@ -63,8 +70,6 @@ import { Geolocation } from '@ionic-native/geolocation';
     HomePage,
     AboutPage,
     PlaylistPage,
-
-
     ChoicePlaylistPage,
     LastAddPage,
     NewPlaylistPage,
@@ -92,3 +97,4 @@ import { Geolocation } from '@ionic-native/geolocation';
  ]
 })
 export class AppModule {}
+platformBrowserDynamic().bootstrapModule(AppModule);

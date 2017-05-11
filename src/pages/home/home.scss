@@ -1,3 +1,23 @@
 page-home {
+ div.homeimg>img{
+ height: 220px
 
+ }
+ img#logotitle{
+  height:30px;
+}
+div#diffuse{
+  boder-bottom: solid 2px black;
+  margin-bottom: 3px;
+background-color: #DDDDDD;
+}
+div#vote{
+background-color: #BBBBBB;
+
+}
+div#content{
+  height:100%;
+ text-align: center;
+ background-color: #BBBBBB;
+}
 }
