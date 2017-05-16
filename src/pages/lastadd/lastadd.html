@@ -10,14 +10,17 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Derniers ajouts</ion-title>
+    <ion-title>
+           <img  src="assets/img/kolp.png" id="logotitle" alt="logo_KOLP"/>
+    </ion-title>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+<h1>Derniers ajouts</h1>
     <ion-list >
     <ion-item no-lines  *ngFor="let music of LastAddMusic ">
     <ion-icon name="heart" (click)=likesing(music.id)></ion-icon>{{music.name}}

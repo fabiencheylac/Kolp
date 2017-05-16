@@ -3811,6 +3811,27 @@ ion-icon {
   src: local("Noto Sans Bold"), local("Noto-Sans-Bold"), url("../assets/fonts/noto-sans-bold.woff") format("woff"), url("../assets/fonts/noto-sans-bold.ttf") format("truetype");
 }
 
+img#logotitle {
+  height: 30px;
+}
+
+h1 {
+  font-size: 2rem !important;
+}
+
+h2 {
+  font-size: 1.6rem !important;
+}
+
+div.titreh2 {
+  background-color: #0092b2;
+  color: #FFFFFF;
+}
+
+div.titreh2 h2 {
+  padding: 5px 3px !important;
+}
+
 ion-action-sheet {
   position: absolute;
   top: 0;
@@ -24319,12 +24340,16 @@ div.imgtypeplaylist {
   display: inline-block;
 }
 
-page-home div.homeimg > img {
-  height: 220px;
+page-choiceplaylist button#btnNewplaylist {
+  margin: 0 10px;
 }
 
-page-home img#logotitle {
-  height: 30px;
+page-choiceplaylist section {
+  margin-bottom: 10px;
+}
+
+page-home div.homeimg > img {
+  height: 220px;
 }
 
 page-home div#diffuse {
@@ -24341,6 +24366,10 @@ page-home div#content {
   height: 100%;
   text-align: center;
   background-color: #BBBBBB;
+}
+
+page-playlist ion-icon.cmdyt {
+  font-size: 3rem !important;
 }
 
 #carte {

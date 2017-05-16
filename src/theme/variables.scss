@@ -76,3 +76,22 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+img#logotitle{
+ height:30px;
+}
+
+h1{
+  font-size: 2rem !important;
+}
+h2{
+  font-size: 1.6rem !important;
+}
+div.titreh2{
+  background-color: #0092b2;
+  color: #FFFFFF;
+  h2{
+      padding: 5px 3px !important;
+  }
+
+}

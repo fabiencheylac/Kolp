@@ -10,18 +10,32 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Choisissez une Playlist</ion-title>
+    <ion-title>
+           <img  src="assets/img/kolp.png" id="logotitle" alt="logo_KOLP"/>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <h1>Playlist à diffusé</h1>
+  <section>
+    <div class="titreh2">
+      <h2>Nouvelle playlist</h2>
+    </div>
+    Commencer avec une playlist de base.
+    <div text-center>
+      <button  ion-button id="btnNewPlaylist"(click)="newplaylist()">Créer</button>
+    </div>
+  </section>
 
-<button ion-button (click)="newplaylist()">Nouvelle playlist</button>
+<section>
+  <div class="titreh2">
+    <h2>Précedente playlist</h2>
+  </div>
 
-<h2>Precedente playlist</h2>
-
+Choisir une playlist déjà utilisé :
 <ion-list no-lines >
   <button ion-item  text-wrap  *ngFor="let oplaylist of Oldplaylist" (click)="selectplaylist(oplaylist.id)">
     {{ oplaylist.name }}
@@ -29,14 +43,22 @@
     {{ oplaylist.genre }}
   </button>
 </ion-list>
+</section>
 
-<h2>dernière playlist rejointe</h2>
-<ion-list no-lines>
-    <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="selectplaylist(lplaylist.id)">
-      {{ lplaylist.name }}
-      {{ lplaylist.comment }}
-      {{ lplaylist.genre }}
-      {{ lplaylist.date }}
-    </button>
-  </ion-list>
+<section>
+  <div class="titreh2">
+    <h2>Dernière playlist rejointe</h2>
+  </div>
+
+  Choisir une playlist a laquelle je me suis connecté recemment :
+  <ion-list no-lines>
+      <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="selectplaylist(lplaylist.id)">
+        {{ lplaylist.name }}
+        {{ lplaylist.comment }}
+        {{ lplaylist.genre }}
+        {{ lplaylist.date }}
+      </button>
+    </ion-list>
+</section>
+
 </ion-content>

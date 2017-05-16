@@ -10,19 +10,24 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Searchplaylist</ion-title>
+    <ion-title>
+           <img  src="assets/img/kolp.png" id="logotitle" alt="logo_KOLP"/>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+<h1>Rechercher un diffuseur à proximiter</h1>
 <div #map id="map" style="height:50%;"></div>
 
 
   <div>
-    <h2>Les playlists à proximité</h2>
+    <div class="titreh2">
+      <h2>Les playlists à proximiter</h2>
+    </div>
+
     <ion-list no-lines>
       <button ion-item (click)="selectPlaylist()">playlist 1</button>
         <button ion-item (click)="selectPlaylist()">playlist 2</button>
