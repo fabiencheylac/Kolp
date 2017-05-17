@@ -12,7 +12,9 @@ import { Playlist } from '../models/playlist';
 */
 @Injectable()
 export class ApiPlaylist {
+
   UrlPlaylist = 'http://www.mocky.io/v2/591c41a9110000e902824f73';
+
 
     constructor(public http: Http) { }
 
