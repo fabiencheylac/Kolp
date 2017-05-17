@@ -10,7 +10,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>newplaylist</ion-title>
+    <ion-title>Nouvelle Playlist</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -20,10 +20,7 @@
 <label>Donnez un titre:</label>
 <input type="text" />
 
-
-
-
- Choisissez un compo de base pour commencer votre Playlist.
+ Choisissez un genre musical de base pour commencer votre Playlist.<br /><br />
  <div (click)=choicetype(item.nom) *ngFor="let item of genre" class="imgtypeplaylist">
    <img [src]=chemin+item+type/>
  </div>

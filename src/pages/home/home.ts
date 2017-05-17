@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
 import { ChoicePlaylistPage } from '../choiceplaylist/choiceplaylist';
 import { SearchPlaylistPage } from '../searchplaylist/searchplaylist';
+import { AboutPage } from '../about/about';
+
 
 @Component({
   selector: 'page-home',
@@ -19,4 +21,9 @@ export class HomePage {
   searchplaylist() {
     this.navCtrl.push(SearchPlaylistPage);
   }
+
+  aboutus() {
+    this.navCtrl.push(AboutPage);
+  }
+
 }

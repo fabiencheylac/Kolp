@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 
 import { LastAddPage } from "../lastadd/lastadd";
@@ -21,7 +21,6 @@ import { PlaylistPage } from '../playlist/playlist';
 })
 export class TabPlaylist {
   tab1Root: any = PlaylistPage;
-
   tab2Root: any = LastAddPage;
   tab3Root: any = SearchYoutubePage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {

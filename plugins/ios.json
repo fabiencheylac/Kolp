@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        }
+    },
+    "dependent_plugins": {}
+}
