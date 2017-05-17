@@ -19,7 +19,7 @@ export class ApiLastPlaylist {
 
   
 
-    UrlLastPlaylist = 'http://www.mocky.io/v2/591c3aa3110000c902824f56';
+    UrlLastPlaylist = 'http://www.mocky.io/v2/591c415b110000e102824f6d';
 
     constructor(public http: Http) { }
 

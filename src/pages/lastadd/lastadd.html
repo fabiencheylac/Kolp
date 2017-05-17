@@ -23,7 +23,7 @@
 <h1>Derniers ajouts</h1>
     <ion-list >
     <ion-item no-lines  *ngFor="let music of LastAddMusic ">
-    <ion-icon name="heart" (click)=likesing(music.id)></ion-icon>{{music.name}}
+    <ion-icon name="heart" (click)=likesing(music.id)></ion-icon> {{ music.name }}
     </ion-item>
     </ion-list>
 </ion-content>
