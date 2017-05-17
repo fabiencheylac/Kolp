@@ -12,7 +12,7 @@ import { LastAddMusic } from '../models/lastAddMusic';
 */
 @Injectable()
 export class ApiLastAddMusic {
-  UrlLastAddMusic = 'http://www.mocky.io/v2/591190df12000048050fb67b';
+  UrlLastAddMusic = 'http://www.mocky.io/v2/591c3b04110000b402824f59';
 
     constructor(public http: Http) { }
 

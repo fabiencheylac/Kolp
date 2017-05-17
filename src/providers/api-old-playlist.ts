@@ -12,12 +12,12 @@ import { Oldplaylist } from '../models/oldplaylist';
 */
 @Injectable()
 export class ApiOldPlaylist {
-  UrlOldPlaylist = 'http://www.mocky.io/v2/5909a9f71000008b0947c176';
+  UrlOldPlaylist = 'http://www.mocky.io/v2/591c3a9a1100009a02824f55';
 
     constructor(public http: Http) { }
 
     load(): Observable<Oldplaylist[]> {
-      return this.http.get('http://www.mocky.io/v2/5909a9f71000008b0947c176')
+      return this.http.get('http://www.mocky.io/v2/591c3a9a1100009a02824f55')
         .map(res => <Oldplaylist[]>res.json());
     }
 }
