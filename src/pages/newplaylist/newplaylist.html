@@ -21,7 +21,8 @@
 <input type="text" />
 
  Choisissez un genre musical de base pour commencer votre Playlist.<br /><br />
- <div (click)=choicetype(item.nom) *ngFor="let item of genre" class="imgtypeplaylist">
+ <!-- <div (click)=choicetype(item.nom) *ngFor="let item of genre" class="imgtypeplaylist"> -->
+     <div  *ngFor="let item of genre" class="imgtypeplaylist">
    <img [src]=chemin+item+type/>
  </div>
 
