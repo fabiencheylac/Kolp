@@ -24340,6 +24340,12 @@ div.imgtypeplaylist {
   display: inline-block;
 }
 
+div.imgtypeplaylist {
+  width: 100px;
+  padding: 10px;
+  display: inline-block;
+}
+
 page-choiceplaylist button#btnNewplaylist {
   margin: 0 10px;
 }
