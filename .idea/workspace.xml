@@ -7,12 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d3f25367-20da-4f70-86d9-298f5a75a56a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/choiceplaylist/choiceplaylist.html" afterPath="$PROJECT_DIR$/src/pages/choiceplaylist/choiceplaylist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/choiceplaylist/choiceplaylist.scss" afterPath="$PROJECT_DIR$/src/pages/choiceplaylist/choiceplaylist.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.html" afterPath="$PROJECT_DIR$/src/pages/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.scss" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1009,12 +1003,12 @@
       <workItem from="1495096354850" duration="739000" />
       <workItem from="1495097197959" duration="2345000" />
       <workItem from="1495099800353" duration="1622000" />
-      <workItem from="1495102317560" duration="9421000" />
+      <workItem from="1495102317560" duration="9981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18797000" />
+    <option name="totallyTimeSpent" value="19357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
