@@ -34,13 +34,13 @@ export class MyApp {
       // used for an example of ngFor and navigation
       this.pages = [
         { title: 'Home', component: HomePage },
-        { title: 'choisir playlist', component: ChoicePlaylistPage },
-        { title: 'new playlist', component: NewPlaylistPage },
-        { title: 'playlist', component: PlaylistPage },
+        { title: 'Choisir Playlist', component: ChoicePlaylistPage },
+        { title: 'Nouvelle Playlist', component: NewPlaylistPage },
+        { title: 'Playlist', component: PlaylistPage },
         { title: 'Recherche youtube', component: SearchYoutubePage },
-        { title: 'Recherche playlist a proximité', component: SearchPlaylistPage },
-        { title: 'dernier ajout', component: LastAddPage },
-        { title: 'playlisttab', component: TabPlaylist },
+        { title: 'Recherche playlist à proximité', component: SearchPlaylistPage },
+        { title: 'Dernier Ajout', component: LastAddPage },
+        { title: 'Playlist Tab', component: TabPlaylist },
         { title: 'A propos', component:  AboutPage},
       ];
 

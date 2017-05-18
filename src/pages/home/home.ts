@@ -3,6 +3,7 @@ import { NavController, PopoverController } from 'ionic-angular';
 import { ChoicePlaylistPage } from '../choiceplaylist/choiceplaylist';
 import { SearchPlaylistPage } from '../searchplaylist/searchplaylist';
 import { AboutPage } from '../about/about';
+import { CguPage } from '../../cgu';
 
 
 @Component({
@@ -24,6 +25,10 @@ export class HomePage {
 
   aboutus() {
     this.navCtrl.push(AboutPage);
+  }
+
+  cgu_view() {
+    this.navCtrl.push(CguPage);
   }
 
 }
