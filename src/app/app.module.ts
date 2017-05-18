@@ -15,6 +15,7 @@ import { SearchBox } from '../pages/searchyoutube/searchyoutube';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
+import { CguPage } from '../cgu';
 
 import { ChoicePlaylistPage } from '../pages/choiceplaylist/choiceplaylist';
 import { NewPlaylistPage } from '../pages/newplaylist/newplaylist';
@@ -44,6 +45,7 @@ import { YoutubePlayerModule } from 'ng2-youtube-player';
     MyApp,
     HomePage,
     AboutPage,
+    CguPage,
     PlaylistPage,
   //  YoutubePage,
     ChoicePlaylistPage,
@@ -69,6 +71,7 @@ import { YoutubePlayerModule } from 'ng2-youtube-player';
     MyApp,
     HomePage,
     AboutPage,
+    CguPage,
     PlaylistPage,
     ChoicePlaylistPage,
     LastAddPage,

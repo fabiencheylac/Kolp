@@ -35,12 +35,10 @@
     <h2>Précedente playlist</h2>
   </div>
 
-Choisir une playlist déjà utilisé :
+Choisir une playlist déjà utilisé :<br /><br/>
 <ion-list no-lines >
-  <button ion-item  text-wrap  *ngFor="let oplaylist of Oldplaylist" (click)="selectplaylist(oplaylist.id)">
-    {{ oplaylist.name }}
-    {{ oplaylist.comment }}
-    {{ oplaylist.genre }}
+  <button ion-item class="button_choicepl" text-wrap  *ngFor="let oplaylist of Oldplaylist" (click)="selectplaylist(oplaylist.id)">
+    <strong>{{ oplaylist.name }}</strong>  <br />     {{ oplaylist.comment }}   <br />  <i class="genre_choicepl">Genre : <strong>{{ oplaylist.genre }}</strong></i>
   </button>
 </ion-list>
 </section>
@@ -53,10 +51,7 @@ Choisir une playlist déjà utilisé :
   Choisir une playlist a laquelle je me suis connecté recemment :
   <ion-list no-lines>
       <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="selectplaylist(lplaylist.id)">
-        {{ lplaylist.name }}
-        {{ lplaylist.comment }}
-        {{ lplaylist.genre }}
-        {{ lplaylist.date }}
+        <strong>{{ lplaylist.name }}</strong> - {{ lplaylist.comment }} <br /> <i>{{ lplaylist.genre }}</i> - {{ lplaylist.date }}
       </button>
     </ion-list>
 </section>
