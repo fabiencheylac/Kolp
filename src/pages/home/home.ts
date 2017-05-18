@@ -27,7 +27,7 @@ export class HomePage {
     this.navCtrl.push(AboutPage);
   }
 
-  cgu_view() {
+  cguview() {
     this.navCtrl.push(CguPage);
   }
 
