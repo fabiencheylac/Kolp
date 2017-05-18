@@ -48,10 +48,10 @@ Choisir une playlist déjà utilisé :<br /><br/>
     <h2>Dernière playlist rejointe</h2>
   </div>
 
-  Choisir une playlist a laquelle je me suis connecté recemment :
+  Choisir une playlist a laquelle je me suis connecté recemment :<br /><br />
   <ion-list no-lines>
-      <button ion-item  text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="selectplaylist(lplaylist.id)">
-        <strong>{{ lplaylist.name }}</strong> - {{ lplaylist.comment }} <br /> <i>{{ lplaylist.genre }}</i> - {{ lplaylist.date }}
+      <button ion-item class="button_choicepl" text-wrap  *ngFor="let lplaylist of Lastplaylist" (click)="selectplaylist(lplaylist.id)">
+        <strong>{{ lplaylist.name }}</strong>  <br /> {{ lplaylist.comment }} <br /><i class="genredt_chociepl">Genre : <strong>{{ lplaylist.genre }}</strong> - {{ lplaylist.date }}</i>
       </button>
     </ion-list>
 </section>
